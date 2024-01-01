@@ -14,13 +14,13 @@ This project is a web application that displays and visualizes a soccer player d
     -  Navigate to the `frontend` directory and open the `index.html` in your browser.
 
 ## Backend REST APIs
-The backend server support the following APIs:
+The backend server supports the following APIs:
 * /players/ 
     - Method: GET
     - Description: returns all players and their attributes
     - Example Query: http://localhost:5000/players/ 
     - Sample Response:
-    ```JSON
+    ```JSON5
     [
         {
             "Name":"Cristiano Ronaldo",
@@ -29,7 +29,7 @@ The backend server support the following APIs:
             "National_Kit":7,
             "Club":"Real Madrid",
             "Club_Position":"LW",
-            // Othere attributes ...
+            //Other attributes ...
         },
         // Other players ...
     ]
@@ -39,7 +39,7 @@ The backend server support the following APIs:
     - Description: returns a player and all the player attributes
     - Example Query: http://localhost:5000/players/Lionel%20Messi
     - Sample Response:
-    ```JSON
+    ```JSON5
     {
         "Name":"Lionel Messi",
         "Nationality":"Argentina",
@@ -55,7 +55,7 @@ The backend server support the following APIs:
     - Description:  returns all clubs with a list of players playing for those clubs
     - Example Query: http://localhost:5000/clubs/
     - Sample Response:
-    ```JSON
+    ```JSON5
     {
         "Real Madrid":["Cristiano Ronaldo","Gareth Bale","Luka Modri\u0107","Sergio Ramos","Toni Kroos","Pepe","James Rodr\u00edguez"],
         "FC Barcelona":["Lionel Messi","Neymar","Luis Su\u00e1rez","Iniesta","Ivan Rakiti\u0107","Piqu\u00e9","Sergio Busquets","Jordi Alba"],
@@ -68,7 +68,7 @@ The backend server support the following APIs:
     - Description: returns a list of all attribute names
     - Example Query: http://localhost:5000/attributes/
     - Sample Response:
-    ``` JSON
+    ``` JSON5
     ["Name","Nationality","National_Position","National_Kit","Club","Club_Position","Club_Kit","Club_Joining","Contract_Expiry","Rating","Height","Weight","Preffered_Foot","Birth_Date","Age","Preffered_Position","Work_Rate","Weak_foot","Skill_Moves","Ball_Control","Dribbling","Marking","Sliding_Tackle","Standing_Tackle","Aggression","Reactions","Attacking_Position","Interceptions","Vision","Composure","Crossing","Short_Pass","Long_Pass","Acceleration","Speed","Stamina","Strength","Balance","Agility","Jumping","Heading","Shot_Power","Finishing","Long_Shots","Curve","Freekick_Accuracy","Penalties","Volleys","GK_Positioning","GK_Diving","GK_Kicking","GK_Handling","GK_Reflexes"]
     ```
     
