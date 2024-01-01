@@ -1,0 +1,136 @@
+
+.dropdown-menu {
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+.main-container {
+    height: calc(100vh - 55px); 
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.table-container {
+    max-height: 100%; 
+    width:auto;
+    max-width: 55%;
+    overflow: auto;
+    display: block;
+    margin-left:0.25rem;
+    
+}
+
+.chart-container {
+    max-height: 100%; 
+    width:auto;
+    max-width: 45%;
+    overflow: auto;
+    display: block;
+    background-color: aliceblue;
+
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: auto;
+    width: auto
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #F0F0F0;
+}
+
+
+td, th {    
+    padding: 0.25rem 0.5rem;
+}
+
+td{
+    white-space:nowrap;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background-color: #D3D3D3;
+    font-weight: bold;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #F0F0F0;
+}
+
+tr:last-child {
+    border-bottom: 2px solid #D3D3D3;
+}
+
+tr{
+    cursor: pointer;
+}
+
+/* symbol for sort in descending order */
+th.des::after {
+    content: '\2193'; 
+    padding: 0.25rem;
+    color:grey;
+}
+
+/* symbol for sort in ascending order */
+th.asc::after {
+    content: '\2191';
+    padding: 0.25rem;
+    color:grey;
+}
+
+.remove {
+    padding-left: 0.25rem;
+    color:grey;
+}
+
+.remove:hover {
+    color:red;
+}
+
+.chart-list {
+    display: flex;
+    align-items: stretch;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.chart {
+   margin:0.25rem;
+   background-color: white;
+
+}
+.selected{
+    fill: orange !important;
+    opacity: 1!important;
+    stroke: black;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: #F0F0F0;
+    border-radius: 8px;
+    padding: 0.5rem;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+  
