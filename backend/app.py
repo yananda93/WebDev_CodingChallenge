@@ -7,7 +7,7 @@ app.json.sort_keys = False
 CORS(app)
 
 # Load data from the JSON file
-with open('data/soccer_small.json', 'r') as file:
+with open('data/soccer_small.json', 'r', encoding="utf8") as file:
     players_data = json.load(file)
 
 # API for getting all players and their attributes
